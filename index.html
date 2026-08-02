@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sky Typist</title>
+
+<link rel="stylesheet" href="index.css">
+<script src="index.js" defer></script>
+<link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+<body>
+<div id="scene">
+  <div class="sun"></div>
+  <div class="label">🌸 Spring — Gentle Breeze, Petals Falling</div>
+
+  <div class="hill hill-far"></div>
+  <div class="hill hill-near"></div>
+
+  <svg id="string"><path id="stringPath" d=""></path></svg>
+
+  <div class="kite-anchor" id="anchor">
+    <div class="kite-sway">
+      <div class="kite" id="kite">
+        <svg viewBox="0 0 90 110">
+          <line x1="45" y1="4" x2="45" y2="95" stroke="#7a4a20" stroke-width="2"/>
+          <line x1="6" y1="35" x2="84" y2="35" stroke="#7a4a20" stroke-width="2"/>
+          <polygon points="45,4 84,35 45,95" fill="var(--kite-red)"/>
+          <polygon points="45,4 6,35 45,95" fill="var(--kite-gold)"/>
+          <line x1="45" y1="4" x2="45" y2="95" stroke="rgba(0,0,0,0.15)" stroke-width="1"/>
+        </svg>
+        <div class="tail">
+          <div class="tail-line"></div>
+          <div class="bow"></div>
+          <div class="bow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="boy" id="boy">
+    <div class="hair"></div>
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="arm"></div>
+    <div class="legs"><span></span><span></span></div>
+  </div>
+
+  <button id="startbtn">Start Game</button>
+</div>
+</body>
+</html>
